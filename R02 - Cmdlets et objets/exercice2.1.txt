@@ -79,8 +79,10 @@ Dans cet exercice, vous devez identifier si la commande donnée est un alias, un
          ri, rm, rmdir, del, erase, rd
 
 13. ren
-    <Type>     
-    <Réponse>  
+    <Type>
+        Alias
+    <Réponse>
+        Rename-Item, rni, ren  
 
 14. ipconfig
     <Type>     
