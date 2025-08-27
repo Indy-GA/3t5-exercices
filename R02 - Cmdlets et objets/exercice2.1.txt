@@ -85,34 +85,48 @@ Dans cet exercice, vous devez identifier si la commande donnée est un alias, un
         Rename-Item, rni, ren  
 
 14. ipconfig
-    <Type>     
-    <Réponse>  
+    <Type>
+        Commande Externe
+    <Réponse>
+        C:\Windows\system32\ipconfig.exe
 
 15. wget
-    <Type>     
-    <Réponse>  
+    <Type>
+        Alias  
+    <Réponse>
+        Invoke-WebRequest, iwr,wget, curl  
 
 16. Move-Item
-    <Type>     
+    <Type>
+        cmdlet 
     <Réponse>  
-
+        mi, mv, move
 17. cat
-    <Type>     
-    <Réponse>  
-
+    <Type>
+        Alias
+    <Réponse> 
+        Get-Content ,cat, type
 18. Start-Process
-    <Type>     
-    <Réponse>  
+    <Type>
+        cmdlet
+    <Réponse> 
+         saps, start
 
 19. kill
-    <Type>     
-    <Réponse>  
+    <Type>
+        Alias    
+    <Réponse>   
+          Stop-Process, spps, kill
 
 20. taskkill
-    <Type>     
-    <Réponse>  
+    <Type>
+        Commande Externe   
+    <Réponse> 
+        C:\Windows\system32\taskkill.exe
 
 21. Invoke-History
-    <Type>     
-    <Réponse>  
+    <Type>
+        cmdlet 
+    <Réponse>
+         Invoke-History, ihy, r
 
