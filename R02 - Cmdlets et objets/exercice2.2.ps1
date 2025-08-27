@@ -7,16 +7,16 @@
 
 
 # 1. Obtenir la liste des fichiers et répertoires contenus dans le répertoir courant (équivalent à dir).
-
+    Get-ChildItem
 
 # 2. Obtenir la liste des fichiers seulement contenus directement sous C:\Windows.
-
+    Get-ChildItem -file C:\Windows
 
 # 3. Obtenir la liste des répertoires seulement contenus directement sous C:\Program Files.
-
+    Get-childItem -directory 'C:\Program Files'
 
 # 4. Obtenir la liste des processus actifs dont le nom commence par "V" (vous pouvez utiliser les wildcards).
-
+    Get-Process V*
 
 # 5. Obtenir de l'information sur le volume C: (comme sa taille, l'espace restant, le format du système de fichiers, etc.)
 
