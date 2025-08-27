@@ -7,15 +7,20 @@ Dans cet exercice, vous devez identifier si la commande donnée est un alias, un
 - Si c'est une commande externe, tentez d'identifier son fichier de programme.
 
 1. ps
-    <Type>     
-    <Réponse>  
+    <Type>
+       Alias
+    <Réponse>
+        Get-Process, gps, ps  
 
 2. shcm
-    <Type>     
-    <Réponse>  
+    <Type>
+             Show-Command
+    <Réponse>
+        Show-Command, shcm
 
 3. Get-ChildItem
-    <Type>     
+    <Type>
+        
     <Réponse>  
 
 4. pwd
