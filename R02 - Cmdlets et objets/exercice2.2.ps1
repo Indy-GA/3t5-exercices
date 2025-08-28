@@ -19,25 +19,26 @@
     Get-Process V*
 
 # 5. Obtenir de l'information sur le volume C: (comme sa taille, l'espace restant, le format du système de fichiers, etc.)
-
+    Get-Partition
+    Get-Disk  2
 
 # 6. Créer un nouveau répertoire nommé Minou à la racine du volume C:\.
-
+    New-Item -ItemType Directory C:\Minou
 
 # 7. Définir ce répertoire comme répertoire de travail (répertoire de travail, équivalent à cd C:\Minou).
-
+    Set-Location -Path C:\Minou
 
 # 8. Obtenir la liste des adapteurs réseau installés sur l'ordinateur.
-
+    Get-NetAdapter
 
 # 9. Obtenir la liste des utilisateurs locaux configurés sur l'ordinateur.
-
+    Get-LocalUser
 
 # 10. Obtenir l'adresse IP numérique du serveur www.cegepmontpetit.ca.
-
+    resolve-DnsName -Type A www.cegepmontpetit.ca
 
 # 11. Vérifier si le serveur www.cegepmontpetit.ca répond sur le port 443 à l'aide de Test-NetConnection.
-
+    Test-NetConnection -ComputerName www.cegepmontpetit.ca -Port 443 
 
 # 12. Obtenez la date (et l'heure) de maintenant.
 
