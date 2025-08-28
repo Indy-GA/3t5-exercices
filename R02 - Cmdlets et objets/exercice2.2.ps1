@@ -41,8 +41,8 @@
     Test-NetConnection -ComputerName www.cegepmontpetit.ca -Port 443 
 
 # 12. Obtenez la date (et l'heure) de maintenant.
-
+    Get-Date 
 
 # 13. <DÉFI> Obtenez la date et l'heure dans le format suivant: 2025-08-26 14:55. Consultez l'aide en ligne (Get-Help -Online) pour plus de détails sur l'utilisation de cette commande.
-
+    Get-Date -Format "yyyy/MM/dd hh:mm"
 
