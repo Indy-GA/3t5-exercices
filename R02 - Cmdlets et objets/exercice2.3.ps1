@@ -10,15 +10,20 @@
 
 # 1. Stockez dans la variable $ipconfig un objet représentant le fichier C:\Windows\System32\ipconfig.exe (avec Get-Item).
 
+    $ipconfig=(Get-Item C:\Windows\system32\ipconfig.exe)
+
 
 # 2. Obtenez la liste de toutes les propriétés et méthodes offertes par cet objet (avec Get-Member).
 
+    get-member -InputObject $ipconfig
 
 # 3. À l'aide de la commande Select-Object, obtenez le maximum d'informations contenu dans cet objet.
 
+    Select-Object -InputObject $ipconfig
 
 # 4. Affichez à l'écran le nom complet de ce fichier (C:\Windows\System32\ipconfig.exe), en utilisant les propriétés de cet objet.
 
+    Select-Object -InputObject $ipconfig.FullName
 
 # 5. Affichez seulement le nom de l'exécutable (ipconfig.exe).
 
