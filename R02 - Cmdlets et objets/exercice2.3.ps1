@@ -27,15 +27,19 @@
 
 # 5. Affichez seulement le nom de l'exécutable (ipconfig.exe).
 
+    Select-Object -InputObject $ipconfig.Length
 
 # 6. Affichez seulement le nom du répertoire dans lequel il se trouve (C:\Windows\System32).
 
+ Select-Object -InputObject $ipconfig.DirectoryName
 
 # 7. Affichez la taille de ce fichier, en octets.
 
+    $ipconfig.Length  
 
 # 8. Affichez la date de création de ce fichier.
 
+    Select-Object -InputObject $ipconfig.CreationTime
 
 # 9. <DÉFI> Affichez la date de création de ce fichier en format yyyy-MM-dd. (Vous aurez besoin de Get-Date).
 
