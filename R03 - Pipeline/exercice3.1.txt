@@ -64,12 +64,18 @@ Pour ce faire, analysez l'objet résultant de chaque maillon à l'aide des comma
 
     - Get-LocalGroup
         - Type de l'objet en sortie: 
+            sous-classe d'un objet 
         - Description: 
+            Information d'un objet créer apres une requete powershell
 
     - Get-LocalGroupMember
         - Type de l'objet en sortie: 
+            sous-classe d'un objet 
         - Description: 
+            Cherche tout les entités dans le groupe Administrateur
 
     - Select-Object
         - Type de l'objet en sortie: 
+            sous-classe de l'objet précedant dans le pipeline
         - Description: 
+            Sors les informations a propos du nom et du sid des membres du groupe Administrateur
