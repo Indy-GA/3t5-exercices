@@ -69,5 +69,8 @@
 
 # 5. Dans cet objet se trouve un sous-objet représentant le format des nombres dans cette langue, dans lequel se trouve le symbole de la device monétaire (currency, soit $). Affichez ce symbole dans la console.
 
+    Select-Object -InputObject $Culture.NumberFormat.CurrencySymbol 
 
 # 6. Obtenez la date du jour dans le format de date courte de la langue courante.
+
+    get-date -Format (Select-Object -InputObject $Culture.DateTimeFormat.ShortDatePattern)
