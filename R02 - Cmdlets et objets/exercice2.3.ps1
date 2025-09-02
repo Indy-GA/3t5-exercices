@@ -53,15 +53,19 @@
 
 # 1. Stockez l'objet produit par Get-Culture dans une variable nommée $Culture.
 
+    $Culture=(Get-Culture)
 
 # 2. Obtenez la liste de toutes les propriétés et méthodes offertes par cet objet
 
+    Get-Member -InputObject $Culture
 
 # 3. À l'aide de la commande Select-Object, obtenez le maximum d'informations contenu dans cet objet.
 
+    Select-Object -InputObject $Culture
 
 # 4. Affichez dans la console seulement la propriété DisplayName.
 
+    Select-Object -InputObject $Culture DisplayName
 
 # 5. Dans cet objet se trouve un sous-objet représentant le format des nombres dans cette langue, dans lequel se trouve le symbole de la device monétaire (currency, soit $). Affichez ce symbole dans la console.
 
