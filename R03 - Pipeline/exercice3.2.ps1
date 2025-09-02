@@ -11,21 +11,22 @@
 #    l'extension .EXE du répertoire C:\Windows, en affichant seulement le nom complet, la date de dernière modification 
 #    et la date de création.
 
-
+    Get-ChildItem C:\Windows *.exe | Select-Object FullName, LastWriteTime, CreationTime
 
 # 2. Sauvegardez toute l'information retournée par Get-ComputerInfo dans le fichier info.txt (à créer dans le répertoire 
 #    courant).
 
+    Get-ComputerInfo | New-Item -Path .\info.txt
 
 
 # 3. À l'aide de la commande Get-Item, affichez le texte contenu dans ce fichier.
 
-
+    Get-Item "R03 - Pipeline\exercice3.2.ps1" | Get-Content
 
 # 4. Dressez la liste des cartes réseau à l'aide de la commande Get-NetAdapter sous forme de tableau avec seulement leur 
 #    nom, leur description et leur adresse MAC.
 
-
+    
 
 # 5. Créez un nouveau répertoire nommé Minou dans le répertoire courant, puis utilisez le pipeline pour entrer dans ce 
 #    répertoire immédiatement après en une seule ligne de commande.
