@@ -7,24 +7,34 @@ Pour ce faire, analysez l'objet résultant de chaque maillon à l'aide des comma
 1. "Spooler" | Get-Service | Select-Object * | Format-List | Out-File Spooler.txt
 
     - "Spooler" (exemple)
-        - Type de l'objet en sortie: String
-        - Description: Le mot "spooler", qui est le nom du service recherché
+        - Type de l'objet en sortie: 
+            String
+        - Description:
+             Le mot "spooler", qui est le nom du service recherché
 
     - Get-Service
         - Type de l'objet en sortie: 
+            Object
         - Description: 
+            Créer l'objet en lien avec le service "Spooler"
 
     - Select-Object
-        - Type de l'objet en sortie: 
-        - Description: 
+        - Type de l'objet en sortie:
+             Détail d'un objet
+        - Description:
+             Sors le Format-List de l'objet "Spooler"
 
     - Format-List
         - Type de l'objet en sortie: 
-        - Description: 
+            Liste des "Member" d'un objet
+        - Description:
+            Liste des "Member" d'un objet
 
     - Out-File
-        - Type de l'objet en sortie: 
+        - Type de l'objet en sortie:
+             Fichier
         - Description: 
+            Sors le résultat de la commande suivant le dernier pipeline dans un fichier .txt dans l'emplacement relatif.
 
 
 
@@ -32,15 +42,21 @@ Pour ce faire, analysez l'objet résultant de chaque maillon à l'aide des comma
 
     - Get-Item
         - Type de l'objet en sortie: 
+            Paramêtres de l'objet ".\hosts"
         - Description: 
+            Créer un objet et affiche les données de l'objet en bref.
 
    - Get-Content
         - Type de l'objet en sortie: 
+            String
         - Description: 
+        Affiche le contenu du fichier C:\Windows\System32\drivers\etc\hosts dans la console comme un string
 
     - Out-Null
         - Type de l'objet en sortie: 
+            Null
         - Description: 
+            Retourne dans la console powershell le néant
 
 
 
@@ -48,12 +64,18 @@ Pour ce faire, analysez l'objet résultant de chaque maillon à l'aide des comma
 
     - Get-LocalGroup
         - Type de l'objet en sortie: 
+            sous-classe d'un objet 
         - Description: 
+            Information d'un objet créer apres une requete powershell
 
     - Get-LocalGroupMember
         - Type de l'objet en sortie: 
+            sous-classe d'un objet 
         - Description: 
+            Cherche tout les entités dans le groupe Administrateur
 
     - Select-Object
         - Type de l'objet en sortie: 
+            sous-classe de l'objet précedant dans le pipeline
         - Description: 
+            Sors les informations a propos du nom et du sid des membres du groupe Administrateur
