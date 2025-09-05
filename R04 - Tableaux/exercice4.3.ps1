@@ -3,7 +3,7 @@
 # 4.3.1. 🏆 Créer 10 fichiers nommés "Fichier 1.txt" à "Fichier 10.txt" dans le répertoire 
 #        du profil de l'utilisateur.
 
-
+    1..10 |ForEach-Object  {New-Item -ItemType File "C:\Users\1380029\Documents\Fichier $_"}
 
 # 4.3.2. 🏆 Dressez la liste de tous les fichiers .EXE dans C:\Windows, sous forme d'un 
 #         tableau montrant le nom du fichier en majuscules ainsi que la taille approximative 
